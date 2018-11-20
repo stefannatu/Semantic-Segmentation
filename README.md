@@ -1,7 +1,7 @@
 # Semantic-Segmentation
 Udacity Course -implement FCN for image segmentation
 
-I implement a FCN following the Medium post by James Le (https://medium.com/nanonets/how-to-do-image-segmentation-using-deep-learning-c673cc5862ef)
+I implement a FCN following the Medium post by James Le (https://medium.com/nanonets/how-to-do-image-segmentation-using-deep-learning-c673cc5862ef). The data can also be found using the links privided in the post. 
 
 The model builds a decoder layer on top of pretrained VGG8. The decoder network expands the output of the VGG8 using conv2d_transpose layers to conver the image embedding back to the original size for pixel wise comparison to the output. The consolution operator is invertible, so the deconvolution can be readily done. Skip connections are added to improve training accuracy to allow better flow of gradients between the encoder and decoder layers.
 
